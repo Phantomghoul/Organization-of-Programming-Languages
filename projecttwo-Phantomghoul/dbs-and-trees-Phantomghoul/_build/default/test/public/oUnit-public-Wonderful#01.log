@@ -1,0 +1,15 @@
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Start test public:0:public_insert1.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Test public:0:public_insert1 is successful.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: End test public:0:public_insert1.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Start test public:6:public_queryBy.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Test public:6:public_queryBy is successful.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: End test public:6:public_queryBy.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Start test public:9:public_tree_fold.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Test public:9:public_tree_fold is successful.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: End test public:9:public_tree_fold.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Start test public:10:public_map.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Test public:10:public_map is successful.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: End test public:10:public_map.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Start test public:14:public_compose.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: Test public:14:public_compose is successful.
+2025-06-15T23:20:56+00:00 Wonderful#01 I: End test public:14:public_compose.

@@ -1,0 +1,33 @@
+type person = { name : string; age : int; hobbies : string list }
+type comparator = person -> person -> int
+type condition =
+  | True
+  | False
+  | Age of (int -> bool)
+  | Name of (string -> bool)
+  | Hobbies of (string list -> bool)
+  | And of condition * condition
+  | Or of condition * condition
+  | Not of condition
+  | If of condition * condition * condition
+
+(* TODO: Implement functions below *)
+
+type db  (* YOU MUST IMPLEMENT THIS TYPE *)
+
+let newDatabase = failwith("unimplemented")
+
+let insert person db = failwith("unimplemented")
+
+let remove name db = failwith("unimplemented")
+
+let sort comparator db = failwith("unimplemented")
+
+let query condition db = failwith("unimplemented")
+
+let queryBy condition db comparator = failwith("unimplemented")
+
+let update condition db change = failwith("unimplemented")
+
+
+let deleteAll condition db = failwith("unimplemented")

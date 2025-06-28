@@ -1,0 +1,22 @@
+open Funs
+(*****************)
+(* Part 4: HOF *)
+(*****************)
+
+let is_there lst x = 
+  fold (fun f z -> f || (z = x)) false lst;;
+
+let count_occ lst target =
+  fold (fun f x -> if x = target then (f+1) else f) 0 lst;;
+
+let uniq lst = 
+  let search x lst = fold (fun f target -> if target = x then true else f) false lst;
+  in
+  fold (fun f element -> if search element f then f else element::f) [] lst;;
+
+let every_xth x lst = 
+  let _, acc =
+    fold(fun (i,a) b -> if i = 1 then (x,a@[b]) else (i-1, a)) (x,[]) lst
+  in
+  acc;;
+  

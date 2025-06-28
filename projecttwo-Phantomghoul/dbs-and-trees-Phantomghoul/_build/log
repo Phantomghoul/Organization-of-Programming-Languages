@@ -1,0 +1,39 @@
+# dune runtest
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/mnden/.cache/dune/db
+# Workspace root:
+# /home/mnden/cmsc330summer25/projecttwo-Phantomghoul/dbs-and-trees-Phantomghoul
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/mnden/.opam/5.2.0/bin/ocamlc.opt -config > /tmp/dune_06e6c5_output
+$ (cd _build/default && /home/mnden/.opam/5.2.0/bin/ocamldep.opt -modules -impl src/tree.ml) > _build/default/src/.p2b.objs/p2b__Tree.impl.d
+$ (cd _build/default && /home/mnden/.opam/5.2.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -11-12-20-26-31-32-33-56-60-27-39 -g -I src/.p2b.objs/byte -I src/.p2b.objs/native -intf-suffix .ml -no-alias-deps -opaque -open P2b -o src/.p2b.objs/native/p2b__Tree.cmx -c -impl src/tree.ml)
+$ (cd _build/default && /home/mnden/.opam/5.2.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -11-12-20-26-31-32-33-56-60-27-39 -g -a -o src/p2b.cmxa src/.p2b.objs/native/p2b.cmx src/.p2b.objs/native/p2b__Tree.cmx src/.p2b.objs/native/p2b__Db.cmx)
+$ (cd _build/default && /home/mnden/.opam/5.2.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/pbt/pbt.exe src/p2b.cmxa /home/mnden/.opam/5.2.0/lib/ocaml/unix/unix.cmxa /home/mnden/.opam/5.2.0/lib/stdlib-shims/stdlib_shims.cmxa /home/mnden/.opam/5.2.0/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/mnden/.opam/5.2.0/lib/ounit2/oUnit.cmxa /home/mnden/.opam/5.2.0/lib/qcheck-core/qcheck_core.cmxa /home/mnden/.opam/5.2.0/lib/qcheck-core/runner/qcheck_runner.cmxa /home/mnden/.opam/5.2.0/lib/qcheck-ounit/qcheck_ounit.cmxa /home/mnden/.opam/5.2.0/lib/qcheck/qcheck.cmxa test/pbt/.pbt.eobjs/native/dune__exe__Pbt.cmx)
+$ (cd _build/default && /home/mnden/.opam/5.2.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -20 -g -o test/public/public.exe src/p2b.cmxa /home/mnden/.opam/5.2.0/lib/ocaml/unix/unix.cmxa /home/mnden/.opam/5.2.0/lib/stdlib-shims/stdlib_shims.cmxa /home/mnden/.opam/5.2.0/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/mnden/.opam/5.2.0/lib/ounit2/oUnit.cmxa test/testUtils.cmxa test/public/.public.eobjs/native/dune__exe__Public.cmx)
+$ (cd _build/default/test/public && ./public.exe)
+> ...............E..
+> ==============================================================================
+> Error: public:17:public_from_pre_in.
+>
+> File "/home/mnden/cmsc330summer25/projecttwo-Phantomghoul/dbs-and-trees-Phantomghoul/_build/default/test/public/oUnit-public-Wonderful#03.log", line 11, characters 1-1:
+> Error: public:17:public_from_pre_in (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.public_tree_from_pre_in in file "test/public/public.ml", line 224, characters 4-35
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> Ran: 18 tests in: 0.11 seconds.
+> FAILED: Cases: 18 Tried: 18 Errors: 1 Failures: 0 Skip:  0 Todo: 0 Timeouts: 0.
+[1]

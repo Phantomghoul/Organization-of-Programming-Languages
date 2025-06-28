@@ -1,0 +1,12 @@
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Start test public:1:public_remove1.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Test public:1:public_remove1 is successful.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: End test public:1:public_remove1.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Start test public:8:public_deleteAll.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Test public:8:public_deleteAll is successful.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: End test public:8:public_deleteAll.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Start test public:12:public_in_order.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Test public:12:public_in_order is successful.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: End test public:12:public_in_order.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Start test public:16:public_trim.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: Test public:16:public_trim is successful.
+2025-06-15T23:20:56+00:00 Wonderful#02 I: End test public:16:public_trim.
